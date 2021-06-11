@@ -10,8 +10,8 @@ server.ehlo()
 server.starttls()
 server.ehlo()
 
-email = ""
-pwd = ""
+email = "" # -> Sender email here
+pwd = "" # -> Sender passworrd here
 try:
     server.login(email, pwd)
 except smtplib.SMTPAuthenticationError as ae:
